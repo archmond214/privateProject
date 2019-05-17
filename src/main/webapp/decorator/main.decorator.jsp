@@ -65,7 +65,7 @@
       </div>
 
       <!--logo start-->
-      <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+      <a href="index.html" class="logo">현종이 <span class="lite">개인프로젝트</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -92,7 +92,7 @@
                         </a>
             <ul class="dropdown-menu extended tasks-bar">
               <div class="notify-arrow notify-arrow-blue"></div>
-              <li>
+               <li>
                 <p class="blue">You have 6 pending letter</p>
               </li>
               <li>
@@ -167,19 +167,19 @@
                 <a href="#">See All Tasks</a>
               </li>
             </ul>
-          </li>
+          </li> 
           <!-- task notificatoin end -->
           <!-- inbox notificatoin start-->
-          <li id="mail_notificatoin_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <i class="icon-envelope-l"></i>
+         <%--  <li id="mail_notificatoin_bar" class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                             <i class="icon-envelope-l"></i>
                             <span class="badge bg-important">5</span>
                         </a>
             <ul class="dropdown-menu extended inbox">
               <div class="notify-arrow notify-arrow-blue"></div>
-              <li>
+             <!--  <li>
                 <p class="blue">You have 5 new messages</p>
-              </li>
+              </li> -->
               <li>
                 <a href="#">
                                     <span class="photo"><img alt="avatar" src="<c:url value="/img/avatar-mini.jpg"/>"></span>
@@ -232,7 +232,7 @@
                 <a href="#">See all messages</a>
               </li>
             </ul>
-          </li>
+          </li> --%>
           <!-- inbox notificatoin end -->
           <!-- alert notification start-->
           <li id="alert_notificatoin_bar" class="dropdown">
@@ -327,7 +327,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="active">
-            <a class="" href="index.html">
+            <a class="" href="/">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
@@ -389,7 +389,7 @@
                       </a>
             <ul class="sub">
               <li><a class="" href="profile.html">Profile</a></li>
-              <li><a class="" href="login.html"><span>Login Page</span></a></li>
+              <li><a class="" href="<c:url value="/session/loginFront.login"/>"><span>로그인 Page</span></a></li>
               <li><a class="" href="contact.html"><span>Contact Page</span></a></li>
               <li><a class="" href="blank.html">Blank Page</a></li>
               <li><a class="" href="404.html">404 Error</a></li>
@@ -425,7 +425,6 @@
             <!--/.info-box-->
           </div>
           <!--/.col-->
-<sitemesh:write property='body'/>
 
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <div class="info-box brown-bg">
@@ -458,10 +457,11 @@
           <!--/.col-->
 
         </div>
+		<sitemesh:write property='body'/>
         <!--/.row-->
 
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-9 col-md-12">
 
             <div class="panel panel-default">
@@ -479,14 +479,14 @@
 
             </div>
           </div>
-          <div class="col-md-3">
-            <!-- List starts -->
+           <div class="col-md-3">
+            List starts
             <ul class="today-datas">
-              <!-- List #1 -->
+              List #1
               <li>
-                <!-- Graph -->
+                Graph
                 <div><span id="todayspark1" class="spark"></span></div>
-                <!-- Text -->
+                Text
                 <div class="datas-text">11,500 visitors/day</div>
               </li>
               <li>
@@ -506,17 +506,17 @@
                 <div class="datas-text">12,000000 visitors every Month</div>
               </li>
             </ul>
-          </div>
+          </div> 
 
 
-        </div>
+        </div> -->
 
 
         <!-- Today status end -->
 
 
 
-        <div class="row">
+       <%--  <div class="row">
 
           <div class="col-lg-9 col-md-12">
             <div class="panel panel-default">
@@ -724,7 +724,7 @@
           </div>
           <!--/col-->
 
-        </div>
+        </div> --%>
 
 
 
@@ -734,7 +734,7 @@
 
 
         <!-- project team & activity start -->
-        <div class="row">
+        <%-- <div class="row">
           <div class="col-md-4 portlets">
             <!-- Widget -->
             <div class="panel panel-default">
@@ -955,9 +955,9 @@
             </section>
             <!--Project Activity end-->
           </div>
-        </div><br><br>
+        </div><br><br> --%>
 
-        <div class="row">
+     <!--    <div class="row" >
           <div class="col-md-6 portlets">
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -969,17 +969,17 @@
 
               </div><br><br><br>
               <div class="panel-body">
-                <!-- Widget content -->
+                Widget content
 
-                <!-- Below line produces calendar. I am using FullCalendar plugin. -->
+                Below line produces calendar. I am using FullCalendar plugin.
                 <div id="calendar"></div>
 
               </div>
             </div>
 
-          </div>
+          </div> -->
 
-          <div class="col-md-6 portlets">
+          <%-- <div class="col-md-6 portlets">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <div class="pull-left">Quick Post</div>
@@ -1050,23 +1050,23 @@
               </div>
             </div>
 
-          </div>
+          </div> --%>
 
         </div>
         <!-- project team & activity end -->
 
       </section>
-      <div class="text-right">
+     <!--  <div class="text-right">
         <div class="credits">
-          <!--
+          
             All the links in the footer should remain intact.
             You can delete the links only if you purchased the pro version.
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version form: https://bootstrapmade.com/buy/?theme=NiceAdmin
-          -->
+         
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
-      </div>
+      </div> -->
     </section>
     <!--main content end-->
   </section>
